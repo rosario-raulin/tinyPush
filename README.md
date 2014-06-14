@@ -1,5 +1,7 @@
 # TinyPush
-## A simple library for Apple Push Notifications
+A simple library for Apple Push Notifications
+
+## Usage
 
 ### Attention: The documentation is still work in progress yet the library should be functional!
 
