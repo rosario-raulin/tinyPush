@@ -8,6 +8,7 @@ A simple library for Apple Push Notifications
 This is how you create a notification:
 
 ```Java
+SecureRandom randomGenerator = new SecureRandom();
 NotificationBuilder notificationBuilder = new NotificationBuilder();
 
 notificationBuilder.tokenFromBase64("fnordfnordfnordfnordnfordfnord=")
@@ -16,7 +17,7 @@ notificationBuilder.tokenFromBase64("fnordfnordfnordfnordnfordfnord=")
     .expiresInMinutes(10)
     .priority(Priority.IMMEDIATELY);
     
-Notification = notificationBuilder.builder();
+Notification notification = notificationBuilder.builder();
 ```
 
 You can send push notifications using the `Provider` class. Instances are created by `ProviderBuilder`:
